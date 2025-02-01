@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Account Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, button { padding: 10px; margin: 5px; }
+        #result { font-weight: bold; color: red; }
+    </style>
+</head>
+<body>
+    <h2>Fake Account Detector</h2>
+    <form action="check_fake.php" method="POST">
+        <label>Enter Username:</label>
+        <input type="text" name="username" required>
+        <button type="submit">Check</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
